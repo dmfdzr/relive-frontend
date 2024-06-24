@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply scroll-smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0.1em;
+}
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white bg-opacity-50 border-b border-slate-200;
+  backdrop-filter: blur(5px);
+}
+
+.grid-layanan {
+  @apply flex flex-wrap p-6 rounded-lg transition duration-300 ease-in-out items-start bg-white shadow-md;
+}
+
+.grid-layanan-icon {
+  @apply w-12 h-12 p-1 flex items-center justify-center rounded-md text-black;
+}
+
+.navbar-item {
+  @apply flex py-2 lg:hover:bg-teal-400 lg:hover:text-white rounded-md lg:px-4 transition duration-300 ease-in-out;
+}
+
+.card-artikel {
+  @apply flex flex-col justify-start w-full mb-6;
+}
+
+.title-artikel {
+  @apply text-center font-semibold sm:text-sm md:text-lg lg:text-xl;
+}
+
+.social-li {
+  @apply flex justify-center items-center h-10 w-10 text-xl rounded-full ease-out duration-300 bg-teal-500 hover:bg-teal-400 text-white;
+}
+
+.item-sidebar {
+  @apply flex items-center text-sm gap-3 font-medium p-3 hover:bg-[#0694A2] focus:outline-none rounded-md;
+}
+
+.sidebar {
+  background-color: #047481;
+  min-height: calc(100vh - 64px); 
+  color: #ffffff;
+  padding: 4px;
+  width: 60px; 
+  transition: width 0.5s;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: #ffffff;
+  color: #4a5568;
+  padding: 8px 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-bottom: 1px solid #e2e8f0;
+  position: relative; 
+  z-index: 10; 
+}
+
+.placeholder-user::placeholder {
+  @apply text-slate-600;
+}
+
+.online {
+  @apply h-3 w-3 bg-teal-400 rounded-full
+}
+
+.custom-icon-size {
+  font-size: 3rem;
+}
